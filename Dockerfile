@@ -24,4 +24,7 @@ RUN chmod +x /start.sh
 
 EXPOSE 4949
 
+# Define data volumes
+VOLUME ["/etc/munin/munin-conf.d"]
+
 CMD ["/start.sh"]
